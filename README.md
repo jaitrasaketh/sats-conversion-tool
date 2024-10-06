@@ -5,20 +5,23 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - install bun
 
 ```bash
-    npm install -g bun
+npm install -g bun
 ```
 
 - install dependencies
 
 ```bash
-    bun install
+bun install
 ```
+
 - get your coin market cap api key at [cmc dev website](https://pro.coinmarketcap.com/) and paste it in the `.env.example` file
+
+- rename your `.env.example` file to `.env` as this file stores your enviormental variables.
 
 - start the project
 
 ```bash
-    bun run dev
+bun run dev
 ```
 
 

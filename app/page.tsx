@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import ThemeToggle from "@/components/ui/button-toggle" 
 
 export default function SatoshiConverter() {
   const [satoshis, setSatoshis] = useState("")
@@ -65,6 +66,7 @@ export default function SatoshiConverter() {
                 1 BTC = 100,000,000 Satoshis
               </p>
             </div>
+
             <Button 
               onClick={handleConvert} 
               className="w-full" 
@@ -72,6 +74,7 @@ export default function SatoshiConverter() {
             >
               Convert to INR
             </Button>
+
             <div className="h-16 flex items-center justify-center">
               {convertedAmount !== null && (
                 <div className="text-center">
@@ -84,6 +87,9 @@ export default function SatoshiConverter() {
                 </div>
               )}
             </div>
+
+            {/* Theme toggle button */}
+            <ThemeToggle />
           </div>
         </CardContent>
       </Card>
